@@ -61,13 +61,8 @@ streamlit run app.py
 
 ---
 
-## Outputs:
-- AI Chat interface
-- Quick action buttons for breathing/exercise
-- Panic mode with SOS guidance
-- Mood tracker line chart
-- Chat history
-- Period tracker
+## WORKING DEMONSTRATION:
+[DEMO VIDEO](
 
 ---
 
