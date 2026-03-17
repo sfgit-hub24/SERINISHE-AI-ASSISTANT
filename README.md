@@ -62,7 +62,7 @@ streamlit run app.py
 ---
 
 ## WORKING DEMONSTRATION:
-[DEMO VIDEO](
+[DEMO VIDEO](https://youtu.be/9PzfHNKsoKs)
 
 ---
 
