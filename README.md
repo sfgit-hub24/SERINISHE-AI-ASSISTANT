@@ -44,8 +44,11 @@ AI-powered mental wellness assistant with chat support, panic mode, mood trackin
 
 ## ⚙️ Installation (Local Setup)
 git clone https://github.com/your-username/serenishe-ai.git
+
 cd serenishe-ai
+
 pip install -r requirements.txt
+
 streamlit run app.py
 
 ---
