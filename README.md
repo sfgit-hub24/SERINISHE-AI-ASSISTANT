@@ -2,7 +2,7 @@
 AI-powered mental wellness assistant with chat support, panic mode, mood tracking, and guided calming techniques.
 
 ## LIVE DEMONSTRATION
-🔗 [Click here to try the app](https://your-link.streamlit.app)
+[CLICK HERE TO VIEW THE AI ASSISTANT IN ACTION](https://serinishe-ai-assistant-zfe88jb37i8wamdernez7n.streamlit.app/)
 
 ---
 
