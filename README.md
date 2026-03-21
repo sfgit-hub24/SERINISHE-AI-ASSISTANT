@@ -1,4 +1,4 @@
-# SERENISHE AI - MENTAL HEALTH AWARENESS ASSISTANT 
+# SERINISHE AI - MENTAL HEALTH AWARENESS ASSISTANT 
 AI-powered mental wellness assistant with chat support, panic mode, mood tracking, and guided calming techniques.
 
 ## LIVE DEMONSTRATION
