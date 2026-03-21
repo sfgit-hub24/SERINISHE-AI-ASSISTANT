@@ -66,8 +66,7 @@ streamlit run app.py
 ---
 
 ## WORKING DEMONSTRATION:
-[DEMO VIDEO](https://youtu.be/9PzfHNKsoKs)
-
+[DEMO VIDEO](https://youtu.be/DaflY0Jb5Tc)
 ---
 
 ### NOTE: This Project is for Mental Wellness Support and is NOT a Substitute for Professional Medical Advice
