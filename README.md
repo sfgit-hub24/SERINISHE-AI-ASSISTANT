@@ -1,8 +1,8 @@
-# SERINISHE AI - MENTAL HEALTH AWARENESS ASSISTANT 
+# SERENISHE AI - MENTAL HEALTH AWARENESS ASSISTANT 
 AI-powered mental wellness assistant with chat support, panic mode, mood tracking, and guided calming techniques.
 
 ## LIVE DEMONSTRATION
-[CLICK HERE TO VIEW THE AI ASSISTANT IN ACTION](https://serinishe-ai-assistant-zfe88jb37i8wamdernez7n.streamlit.app/)
+[CLICK HERE TO VIEW THE AI ASSISTANT & TO WORK ON IT](https://serinishe-ai-assistant-zfe88jb37i8wamdernez7n.streamlit.app/)
 
 ---
 
@@ -66,7 +66,7 @@ streamlit run app.py
 ---
 
 ## WORKING DEMONSTRATION:
-[DEMO VIDEO](https://youtu.be/DaflY0Jb5Tc)
+[DEMO VIDEO OF HOW ONE CAN USE SERENISHE](https://youtu.be/DaflY0Jb5Tc)
 ---
 
 ### NOTE: This Project is for Mental Wellness Support and is NOT a Substitute for Professional Medical Advice
