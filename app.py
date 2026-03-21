@@ -92,14 +92,12 @@ if not st.session_state.user:
 # MAIN APP
 # -----------------------------
 else:
-    # HEADER
     col1, col2, col3 = st.columns([1,3,1])
     with col2:
         st.image("serinishe_logo.png", width=250)
 
     st.markdown("<h2 style='text-align:center;'>🌸 Serenishe</h2>", unsafe_allow_html=True)
 
-    # SESSION STATE
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
@@ -112,7 +110,6 @@ else:
     if "mode" not in st.session_state:
         st.session_state.mode = None
 
-    # SIDEBAR
     st.sidebar.success(f"Logged in as {st.session_state.user} ✅")
 
     if st.sidebar.button("Logout"):
@@ -124,27 +121,18 @@ else:
         ["Chat 💬", "Mood Tracker 😊", "Panic Mode 🚨", "Chat History 📜", "Period Tracker 🩸"]
     )
 
-    # -----------------------------
-    # AI RESPONSE
-    # -----------------------------
     def get_ai_response(text):
         text = text.lower()
 
         if "stress" in text or "overwhelmed" in text:
             return "I hear you 💙 Let’s slow things down together. Take a deep breath 🫁"
-
         elif "sad" in text:
             return "I’m here with you 💙 You’re not alone."
-
         elif "anxious" in text or "panic" in text:
             return "You’re safe 💙 Breathe with me."
-
         else:
             return "I’m here for you 💬 Tell me what’s on your mind."
 
-    # -----------------------------
-    # CHAT
-    # -----------------------------
     if option == "Chat 💬":
         st.subheader("💬 Talk to Serenishe")
 
@@ -165,14 +153,12 @@ else:
 
                 st.rerun()
 
-        # DISPLAY CHAT
         for msg in st.session_state.messages:
             if msg["role"] == "user":
                 st.markdown(f"<div class='chat-user'>🧑 {msg['content']}</div>", unsafe_allow_html=True)
             else:
                 st.markdown(f"<div class='chat-bot'>🌸 {msg['content']}</div>", unsafe_allow_html=True)
 
-        # QUICK ACTIONS
         if len(st.session_state.messages) > 0:
             st.markdown("---")
             st.write("### 💡 What would help you right now?")
@@ -189,38 +175,22 @@ else:
                 st.session_state.mode = None
                 st.rerun()
 
-        # BREATHING MODE
         if st.session_state.mode == "breathing":
             st.info("Let’s breathe together 🫁")
-
-            st.write("""
-Inhale for 4 seconds  
-Hold for 4 seconds  
-Exhale for 6 seconds  
-""")
+            st.write("Inhale 4 → Hold 4 → Exhale 6")
 
             if st.button("Done"):
                 st.session_state.mode = None
                 st.rerun()
 
-        # EXERCISE MODE
         if st.session_state.mode == "exercise":
             st.info("Let’s reset your mind 🌿")
-
-            st.write("""
-✨ Stretch your shoulders  
-✨ Drink water  
-✨ Take a short walk  
-✨ Deep breathing  
-""")
+            st.write("✨ Stretch • 💧 Hydrate • 🚶 Walk • 🫁 Breathe")
 
             if st.button("Done "):
                 st.session_state.mode = None
                 st.rerun()
 
-    # -----------------------------
-    # MOOD TRACKER
-    # -----------------------------
     elif option == "Mood Tracker 😊":
         st.subheader("😊 Mood Tracker")
 
@@ -228,21 +198,16 @@ Exhale for 6 seconds
 
         if st.button("Save Mood"):
             mood_map = {"😊 Happy": 4, "😐 Okay": 3, "😔 Sad": 2, "😣 Stressed": 1}
-
             st.session_state.mood_data.append({
                 "time": datetime.now().strftime("%H:%M"),
                 "value": mood_map[mood]
             })
-
             st.success("Saved 💙")
 
         if st.session_state.mood_data:
             values = [m["value"] for m in st.session_state.mood_data]
             st.line_chart(values)
 
-    # -----------------------------
-    # PANIC MODE
-    # -----------------------------
     elif option == "Panic Mode 🚨":
         st.subheader("🚨 Panic Support")
         st.error("You're safe 💙 Stay with me")
@@ -251,23 +216,17 @@ Exhale for 6 seconds
             st.info("Inhale 4 → Hold 4 → Exhale 6")
 
         if st.button("Try Something Else"):
-            st.write("✨ Splash cold water\n✨ Sit down and relax\n✨ Focus on surroundings")
+            st.write("✨ Splash water • Sit down • Focus around you")
 
         if st.button("🚨 SOS"):
             st.warning("Contacting emergency support 🚨")
 
-    # -----------------------------
-    # CHAT HISTORY
-    # -----------------------------
     elif option == "Chat History 📜":
         st.subheader("📜 Chat History")
 
         for chat in reversed(st.session_state.chat_log):
             st.write(chat)
 
-    # -----------------------------
-    # PERIOD TRACKER
-    # -----------------------------
     elif option == "Period Tracker 🩸":
         st.subheader("🩸 Period Tracker")
 
@@ -277,6 +236,5 @@ Exhale for 6 seconds
         if st.button("Predict"):
             st.success(f"Next period: {last + timedelta(days=cycle)}")
 
-    # FOOTER
     st.markdown("---")
     st.caption("🌸 Serenishe | Your calm space 💙")
