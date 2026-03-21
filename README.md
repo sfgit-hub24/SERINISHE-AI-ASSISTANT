@@ -33,6 +33,10 @@ AI-powered mental wellness assistant with chat support, panic mode, mood trackin
 - Predicts next cycle
 - Simple health tracking
 
+## 🔐 Authentication
+- Simple login system for multiple users
+- Personalized session handling
+
 ---
 
 ## 🛠️ Tech Stack
@@ -70,10 +74,14 @@ streamlit run app.py
 
 ---
 
+"The Application is fully Deployed and Accessible via web, ensuring scalability and real-time usage."
+
+---
+
 AUTHORS:
 
-Safa Fatima 
+Safa Fatima (Team Leader)
 
-Ishra Shameen
+Ishra Shameen (Team Member)
 
-VibeCoding Hackathon | Ignition & NxtGenSec
+Team - HackPair | VibeCoding Hackathon | Ignition & NxtGenSec
