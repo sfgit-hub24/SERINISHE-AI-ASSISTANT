@@ -1,8 +1,3 @@
-<<<<<<< HEAD
 streamlit
-pandas
-=======
-streamlit
-pandas
->>>>>>> 0af356532bb2926dbbc03237fa63c267b1fcf349
+pandas 
 matplotlib
