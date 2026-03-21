@@ -66,7 +66,7 @@ streamlit run app.py
 ---
 
 ## WORKING DEMONSTRATION:
-[DEMO VIDEO OF HOW ONE CAN USE SERENISHE](https://youtu.be/DaflY0Jb5Tc)
+[DEMO VIDEO OF HOW ONE CAN USE THE APPLICATION](https://youtu.be/DaflY0Jb5Tc)
 ---
 
 ### NOTE: This Project is for Mental Wellness Support and is NOT a Substitute for Professional Medical Advice
@@ -80,7 +80,7 @@ In today’s fast-paced world, stress, anxiety, and panic attacks are common, bu
 ---
 
 ## OUR SOLUTION:
-Serenishe AI is an AI-powered app designed to provide real-time support and guidance for mental well-being. The app helps users:
+Serinishe AI is an AI-powered app designed to provide real-time support and guidance for mental well-being. The app helps users:
 - Calm themselves during panic attacks or stressful situations
 - Track and monitor their emotional state
 - Access personalized mental health guidance anytime, anywhere
